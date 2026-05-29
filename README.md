@@ -2,8 +2,6 @@
 
 Forge Interpreter is the official runtime for **ForgeScript (`.mold`)**, a lightweight template-driven language designed for rapid project scaffolding, automation, and environment generation.
 
----
-
 ## What is ForgeScript?
 
 ForgeScript is a declarative language used to define reusable project templates called **molds**. Each `.mold` file describes how a project should be initialized and which actions can be executed through the Forge CLI.
@@ -11,8 +9,6 @@ ForgeScript is a declarative language used to define reusable project templates 
 Forge is built around a simple idea:
 
 > Define once, generate and reuse everywhere.
-
----
 
 ## Core Concepts
 
@@ -24,8 +20,6 @@ A template defines a project type (e.g. `cpp`, `node`, `python`) and lives in th
 template "cpp"
 ```
 
----
-
 ### Properties
 
 Static configuration values used across the template.
@@ -36,8 +30,6 @@ properties {
     property2 = 1
 }
 ```
-
----
 
 ### Tasks
 
@@ -51,8 +43,6 @@ task init() {
 ```
 
 Tasks may accept parameters, including typed values and CLI flags.
-
----
 
 ### CLI Flags (Opt)
 
@@ -68,8 +58,6 @@ task init(
 }
 ```
 
----
-
 ## Installation
 
 Forge Interpreter is currently in early development.
@@ -80,8 +68,6 @@ cd forge-interpreter
 ```
 
 Build instructions will depend on the final implementation language (C++ target planned).
-
----
 
 ## Usage
 
@@ -97,8 +83,6 @@ This:
 * Executes the `init` task
 * Generates a `.forge` project configuration file
 
----
-
 ### Run a task
 
 ```bash
@@ -110,8 +94,6 @@ Forge:
 * Reads `.forge`
 * Resolves the template
 * Executes the matching task
-
----
 
 ## Project State (.forge)
 
@@ -128,8 +110,6 @@ Each project stores metadata in a `.forge` file:
 
 This allows Forge to operate without re-specifying the template after initialization.
 
----
-
 ## Language Pipeline
 
 Forge Interpreter follows a classic compiler architecture:
@@ -137,8 +117,6 @@ Forge Interpreter follows a classic compiler architecture:
 1. **Lexer** – converts source code into tokens
 2. **Parser** – builds an abstract syntax tree (AST)
 3. **Interpreter** – executes tasks and commands
-
----
 
 ## Supported Commands (Initial Set)
 
@@ -161,8 +139,6 @@ Forge Interpreter follows a classic compiler architecture:
 * `ls`
 * `exec`
 
----
-
 ## Design Goals
 
 Forge is designed to be:
@@ -172,8 +148,6 @@ Forge is designed to be:
 * Extensible through templates
 * CLI-first and automation-focused
 
----
-
 ## Status
 
 Forge Interpreter is currently:
@@ -182,13 +156,9 @@ Forge Interpreter is currently:
 * 🧪 Not production-ready
 * 🚧 Syntax and standard library subject to change
 
----
-
 ## License
 
 This project is licensed under the terms of the [LICENSE](LICENSE) file.
-
----
 
 ## Vision
 
