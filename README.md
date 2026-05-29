@@ -2,6 +2,11 @@
 
 Forge Interpreter is the official runtime for **ForgeScript (`.mold`)**, a lightweight template-driven language designed for rapid project scaffolding, automation, and environment generation.
 
+## What is Forge?
+Forge (short for _*F*ramework for *O*rganized and *R*apid *G*eneration of *E*nvironments_) is a cross-platform, free and open source CLI project management tool.
+
+_More details over on [FORGE](https://github.com/andrei-147/forge)!_
+
 ## What is ForgeScript?
 
 ForgeScript is a declarative language used to define reusable project templates called **molds**. Each `.mold` file describes how a project should be initialized and which actions can be executed through the Forge CLI.
@@ -63,7 +68,7 @@ task init(
 Forge Interpreter is currently in early development.
 
 ```bash
-git clone https://github.com/forge-lang/forge-interpreter
+git clone https://github.com/andrei-147/forge-interpreter
 cd forge-interpreter
 ```
 
