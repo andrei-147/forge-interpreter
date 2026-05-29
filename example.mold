@@ -1,0 +1,7 @@
+template"cpp"
+task main(
+    git Opt "g" "git",
+    windows Bool
+) {
+    task subtask() {}
+}
